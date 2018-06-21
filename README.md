@@ -223,8 +223,7 @@ tokenIdentification:币种
 
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
-| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
-|sectorId       |  number   |   是     |   sectorId=2时根据BTC  |
+|sectorId |  number   |   是     |   sectorId=2时根据BTC  |
 |v         |       number  |  是       |  v=0.5570646255753278
 
 
