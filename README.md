@@ -225,27 +225,9 @@ tokenIdentification:币种
 | :-------- | --------:| :------: |:------:|
 |sectorId |  number   |   是     |   sectorId=2时根据BTC  |
 |v         |       number  |  是       |  v=0.5570646255753278|
-9. Get/public/member/getQRCode充值二维码
 
-URL ```  https://www.ttex.com/public/member/getQRCode```
-示例
-```
-# Request
-GET https://www.ttex.com/public/member/getQRCode
-# Response
-{
-}
-```
-返回值说明
-```
-
-```
-请求参数
-
-|参数名    |     参数类型 |   必填  |  描述 |
-| :-------- | --------:| :------: |:------:|
-|QRCodeString|  string|   是     |  二维码地址 |
-10. Get/mobile/currency/deposits/find充值记录
+###资产API
+1. Get/mobile/currency/deposits/find充值记录
 
 URL ```  https://www.ttex.com/mobile/currency/deposits/find```
 示例
@@ -278,7 +260,7 @@ txNo:订单号
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 | type  |           |   是        |  type=0       |
-11. Get/mobile/ewallet/ewalletAddress/findCurrencyDepositAddress充币地址
+2. Get/mobile/ewallet/ewalletAddress/findCurrencyDepositAddress充币地址
 
 URL ```  https://www.ttex.com/mobile/ewallet/ewalletAddress/findCurrencyDepositAddress```
 示例
@@ -303,7 +285,7 @@ address:地址
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
-12. Get/mobile/ewallet/ewalletAddress/delete删除提币地址
+3. Get/mobile/ewallet/ewalletAddress/delete删除提币地址
 
 URL ```  https://www.ttex.com/mobile/ewallet/ewalletAddress/delete```
 示例
@@ -324,7 +306,7 @@ result:返回是否成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | ids|  number|  是  | 提币地址|
-13. Get/mobile/currency/withdraws/save提币
+4. Get/mobile/currency/withdraws/save提币
 
 URL ```   https://www.ttex.com/mobile/currency/withdraws/save```
 示例
@@ -351,7 +333,7 @@ result:返回是否成功
 | pwd|  string|  是  |	资金密码	|
 |toEwalletAddress|  string|  是  | 提币地址	|
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
-14. Get/public/stock/get提币手续费
+5. Get/public/stock/get提币手续费
 
 URL ```   https://www.ttex.com/public/stock/get```
 示例
@@ -377,7 +359,7 @@ result:返回是否成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
-15. Get/mobile/currency/withdraws/find提币记录
+6. Get/mobile/currency/withdraws/find提币记录
 
 URL ``` https://www.ttex.com/mobile/currency/withdraws/find```
 示例
@@ -410,7 +392,7 @@ result:返回是否成功
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 | type    |  number    | 是     | type=0      |
-16. Get/mobile/ewallet/ewalletAddress/find显示提币地址
+7. Get/mobile/ewallet/ewalletAddress/find显示提币地址
 
 URL ``` https://www.ttex.com/mobile/ewallet/ewalletAddress/find```
 示例
@@ -436,7 +418,7 @@ result:返回是否成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
-17. Get/mobile/ewallet/ewalletAddress/save添加提币地址
+8. Get/mobile/ewallet/ewalletAddress/save添加提币地址
 
 URL ```  https://www.ttex.com/mobile/ewallet/ewalletAddress/save```
 示例
@@ -457,7 +439,7 @@ result:返回是否成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | address|  String |  是  | 提币地址 |
-18. Get/mobile/member/getAccount资产中心
+9. Get/mobile/member/getAccount资产中心
 
 URL ```https://www.ttex.com/mobile/member/getAccount```
 示例
