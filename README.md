@@ -1,5 +1,5 @@
-##API参考
-###交易API
+## API参考
+### 交易API
 1. Get/mobile/currency/trade/cancel删除订单
 
 URL ```https://www.ttex.com/mobile/currency/trade/cancel```
