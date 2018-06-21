@@ -6,7 +6,7 @@ URL ```https://www.ttex.com/mobile/currency/trade/cancel```
 示例
 ```
 # Request
-GET https://ttex.com/mobile/currency/trade/cancel?txNo=?
+GET https://ttex.com/mobile/currency/trade/cancel
 # Response
 {
 	"data":"委托撤单成功",
@@ -29,7 +29,7 @@ URL ```  https://www.ttex.com/mobile/currency/trade/findHistoryEntrust ```
 示例
 ```
 # Request
-GET https://ttex.com/mobile/currency/trade/findHistoryEntrust?code=300020&page=0&limit=100
+GET https://ttex.com/mobile/currency/trade/findHistoryEntrust
 # Response
 {
 	"data:[{
@@ -56,14 +56,14 @@ result:成功
 
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
-| symbol|  String |  是  | 币种编号|
+| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 3. Get/mobile/currency/trade/findEntrust获取个人当前委托
 
 URL ```https://www.ttex.com/mobile/currency/trade/findHistoryEntrust ```
 示例
 ```
 # Request
-GET https://ttex.com/mobile/currency/trade/findHistoryEntrust?code=300020&page=0&limit=100
+GET https://ttex.com/mobile/currency/trade/findHistoryEntrust
 # Response
 {
 	"data:[{
@@ -90,4 +90,4 @@ result:成功
 
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
-| symbol|  String |  是  | 币种编号|
+| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
