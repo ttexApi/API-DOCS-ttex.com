@@ -1,12 +1,12 @@
 ## API参考
 ### 交易API
-1. Get/mobile/currency/trade/cancel删除订单
+1. Get/currency/trade/cancel删除订单
 
-URL ```https://www.ttex.com/mobile/currency/trade/cancel```
+URL ```https://api.ttex.com/currency/trade/cancel```
 示例
 ```
 # Request
-GET https://ttex.com/mobile/currency/trade/cancel
+GET https://api.ttex.com/currency/trade/cancel
 # Response
 {
 	"data":"委托撤单成功",
@@ -23,13 +23,13 @@ result:成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | txNo|  String |  是  | 当前选择撤销订单号|
-2. Get/mobile/currency/trade/findHistoryEntrust获取个人历史委托
+2. Get/currency/trade/findHistoryEntrust获取个人历史委托
 
-URL ```  https://www.ttex.com/mobile/currency/trade/findHistoryEntrust ```
+URL ```  https://api.ttex.com/currency/trade/findHistoryEntrust ```
 示例
 ```
 # Request
-GET https://ttex.com/mobile/currency/trade/findHistoryEntrust
+GET https://api.ttex.com/currency/trade/findHistoryEntrust
 # Response
 {
 	"data:[{
@@ -57,13 +57,13 @@ result:成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
-3. Get/mobile/currency/trade/findEntrust获取个人当前委托
+3. Get/currency/trade/findEntrust获取个人当前委托
 
-URL ```https://www.ttex.com/mobile/currency/trade/findHistoryEntrust ```
+URL ```https://api.ttex.com/currency/trade/findHistoryEntrust ```
 示例
 ```
 # Request
-GET https://ttex.com/mobile/currency/trade/findHistoryEntrust
+GET https://api.ttex.com/currency/trade/findHistoryEntrust
 # Response
 {
 	"data:[{
@@ -93,11 +93,11 @@ result:成功
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 4. Get/public/stock/get获取交易盘口
 
-URL ```https://www.ttex.com/public/stock/get```
+URL ```https://api.ttex.com/public/stock/get```
 示例
 ```
 # Request
-GET https://www.ttex.com/public/stock/get
+GET https://api.ttex.com/public/stock/get
 # Response
 {
 	"data:{
@@ -121,11 +121,11 @@ result:成功
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 5. Get/public/stock/marketDepth获取交易盘口数据
 
-URL ``` https://www.ttex.com/public/stock/marketDepth```
+URL ``` https://api.ttex.com/public/stock/marketDepth```
 示例
 ```
 # Request
-GET https://www.ttex.com/public/stock/marketDepth
+GET https://api.ttex.com/public/stock/marketDepth
 # Response
 {
   "buyers":[{
@@ -153,11 +153,11 @@ priceStr:价格
 | num|  number|  是  |盘口显示数据量|
 6. Get/public/stock/currency/trade/latest交易记录
 
-URL ```https://www.ttex.com/public/stock/currency/trade/latest```
+URL ```https://api.ttex.com/public/stock/currency/trade/latest```
 示例
 ```
 # Request
-GET   https://www.ttex.com/public/stock/currency/trade/latest
+GET   https://api.ttex.com/public/stock/currency/trade/latest
 # Response
 [{
     "num":303.6577
@@ -176,13 +176,13 @@ tradeTime:成交时间
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
-7. Get/mobile/member/position/getWithCurrency获取当前交易对余额
+7. Get/member/position/getWithCurrency获取当前交易对余额
 
-URL ```https://www.ttex.com/mobile/member/position/getWithCurrency```
+URL ```https://api.ttex.com/member/position/getWithCurrency```
 示例
 ```
 # Request
-GET https://www.ttex.com/mobile/member/position/getWithCurrency
+GET https://api.ttex.com/member/position/getWithCurrency
 # Response
 {
         "buyBalance":99999998.3391
@@ -201,11 +201,11 @@ sellBalance:买入时余额
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 8. Get/public/stock/findBySector获取首页列表
 
-URL ``` https://www.ttex.com/public/stock/findBySector```
+URL ``` https://api.ttex.com/public/stock/findBySector```
 示例
 ```
 # Request
-GET  https://www.ttex.com/public/stock/findBySector
+GET  https://api.ttex.com/public/stock/findBySector
 # Response
 [{
         "price":0.000019
@@ -227,13 +227,13 @@ tokenIdentification:币种
 |v         |       number  |  是       |  v=0.5570646255753278|
 
 ###资产API
-1. Get/mobile/currency/deposits/find充值记录
+1. Get/currency/deposits/find充值记录
 
-URL ```  https://www.ttex.com/mobile/currency/deposits/find```
+URL ```  https://api.ttex.com/currency/deposits/find```
 示例
 ```
 # Request
-GET https://www.ttex.com/mobile/currency/deposits/find
+GET https://api.ttex.com/currency/deposits/find
 # Response
 {
      "data":[{
@@ -260,13 +260,13 @@ txNo:订单号
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 | type  |           |   是        |  type=0       |
-2. Get/mobile/ewallet/ewalletAddress/findCurrencyDepositAddress充币地址
+2. Get/ewallet/ewalletAddress/findCurrencyDepositAddress充币地址
 
-URL ```  https://www.ttex.com/mobile/ewallet/ewalletAddress/findCurrencyDepositAddress```
+URL ```  https://api.ttex.com/ewallet/ewalletAddress/findCurrencyDepositAddress```
 示例
 ```
 # Request
-GET  https://www.ttex.com/mobile/ewallet/ewalletAddress/findCurrencyDepositAddress
+GET  https://api.ttex.com/ewallet/ewalletAddress/findCurrencyDepositAddress
 # Response
 {
      "data":[{
@@ -285,13 +285,13 @@ address:地址
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
-3. Get/mobile/ewallet/ewalletAddress/delete删除提币地址
+3. Get/ewallet/ewalletAddress/delete删除提币地址
 
-URL ```  https://www.ttex.com/mobile/ewallet/ewalletAddress/delete```
+URL ```  https://api.ttex.com/ewallet/ewalletAddress/delete```
 示例
 ```
 # Request
-GET  https://www.ttex.com/mobile/ewallet/ewalletAddress/delete
+GET  https://api.ttex.com/ewallet/ewalletAddress/delete
 # Response
 {
      "result":success
@@ -306,13 +306,13 @@ result:返回是否成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | ids|  number|  是  | 提币地址|
-4. Get/mobile/currency/withdraws/save提币
+4. Get/currency/withdraws/save提币
 
-URL ```   https://www.ttex.com/mobile/currency/withdraws/save```
+URL ```   https://www.api.com/currency/withdraws/save```
 示例
 ```
 # Request
-GET  https://www.ttex.com/mobile/currency/withdraws/save
+GET  https://api.ttex.com/currency/withdraws/save
 # Response
 {    
      "data":提交成功
@@ -335,11 +335,11 @@ result:返回是否成功
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 5. Get/public/stock/get提币手续费
 
-URL ```   https://www.ttex.com/public/stock/get```
+URL ```   https://api.ttex.com/public/stock/get```
 示例
 ```
 # Request
-GET https://www.ttex.com/public/stock/get
+GET https://api.ttex.com/public/stock/get
 # Response
 {  
      "data":{
@@ -359,13 +359,13 @@ result:返回是否成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
-6. Get/mobile/currency/withdraws/find提币记录
+6. Get/currency/withdraws/find提币记录
 
-URL ``` https://www.ttex.com/mobile/currency/withdraws/find```
+URL ``` https://api.ttex.com/currency/withdraws/find```
 示例
 ```
 # Request
-GET  https://www.ttex.com/mobile/currency/withdraws/find
+GET  https://api.ttex.com/currency/withdraws/find
 # Response
 {  
      "data":[{
@@ -392,13 +392,13 @@ result:返回是否成功
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 | type    |  number    | 是     | type=0      |
-7. Get/mobile/ewallet/ewalletAddress/find显示提币地址
+7. Get/ewallet/ewalletAddress/find显示提币地址
 
-URL ``` https://www.ttex.com/mobile/ewallet/ewalletAddress/find```
+URL ``` https://api.ttex.com/ewallet/ewalletAddress/find```
 示例
 ```
 # Request
-GET  https://www.ttex.com/mobile/ewallet/ewalletAddress/find
+GET  https://api.ttex.com/ewallet/ewalletAddress/find
 # Response
 {  
      "data":[{
@@ -418,13 +418,13 @@ result:返回是否成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
-8. Get/mobile/ewallet/ewalletAddress/save添加提币地址
+8. Get/ewallet/ewalletAddress/save添加提币地址
 
-URL ```  https://www.ttex.com/mobile/ewallet/ewalletAddress/save```
+URL ```  https://api.ttex.com/ewallet/ewalletAddress/save```
 示例
 ```
 # Request
-GET   https://www.ttex.com/mobile/ewallet/ewalletAddress/save
+GET   https://api.ttex.com/ewallet/ewalletAddress/save
 # Response
 {  
      "result":success
@@ -439,13 +439,13 @@ result:返回是否成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | address|  String |  是  | 提币地址 |
-9. Get/mobile/member/getAccount资产中心
+9. Get/member/getAccount资产中心
 
-URL ```https://www.ttex.com/mobile/member/getAccount```
+URL ```https://api.ttex.com/member/getAccount```
 示例
 ```
 # Request
-GET https://www.ttex.com/mobile/member/getAccount
+GET https://api.ttex.com/member/getAccount
 # Response
 [{  
      "blockedNum":0
