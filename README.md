@@ -323,6 +323,8 @@ txNo:订单号
 |num|  number   |   是     |	限价买入量	  |
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 |price| number|是|价格
+
+
 ###资产API
 1. Get/currency/deposits/find充值记录
 
