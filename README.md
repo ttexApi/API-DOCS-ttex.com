@@ -248,7 +248,7 @@ txNo:订单号
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 |amount|  number   |   是     |	买入量	  |
-|code |  number  |  是       |  币种名称	|
+| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 10. Get/mobile/currency/trade/market/sell市价交易卖出
 
 URL ```   https://api.ttex.com/currency/trade/market/sell```
@@ -272,7 +272,7 @@ txNo:订单号
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 |num|  number   |   是     |	卖出量	  |
-|code |  number  |  是       |  币种名称	|
+| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 11. Get/mobile/currency/trade/buy限价交易买入
 
 URL ```https://api.ttex.com/currency/trade/buy```
@@ -296,7 +296,7 @@ txNo:订单号
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 |num|  number   |   是     |	限价买入量	  |
-|code |  number  |  是       |  币种名称	|
+| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 |price | number|是|限价买入价格
 12. Get/mobile/currency/trade/sell限价交易卖出
 
@@ -321,7 +321,7 @@ txNo:订单号
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 |num|  number   |   是     |	限价买入量	  |
-|code |  number  |  是       |  币种名称	|
+| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 |price| number|是|价格
 ###资产API
 1. Get/currency/deposits/find充值记录
