@@ -59,11 +59,11 @@ result:成功
 | symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
 3. Get/currency/trade/findEntrust获取个人当前委托
 
-URL ```https://api.ttex.com/currency/trade/findHistoryEntrust ```
+URL ```https://api.ttex.com/currency/trade/findEntrust ```
 示例
 ```
 # Request
-GET https://api.ttex.com/currency/trade/findHistoryEntrust
+GET https://api.ttex.com/currency/trade/findEntrust
 # Response
 {
 	"data:[{
