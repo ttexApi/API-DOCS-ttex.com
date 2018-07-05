@@ -24,7 +24,7 @@ txNo:订单号
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 |amount|  number   |   是     |	买入量	  |
-| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
+| symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
 2. Get/mobile/currency/trade/market/sell市价交易卖出
 
@@ -49,7 +49,7 @@ txNo:订单号
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 |num|  number   |   是     |	卖出量	  |
-| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
+| symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
 3. Get/mobile/currency/trade/buy限价交易买入
 
@@ -74,7 +74,7 @@ txNo:订单号
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 |num|  number   |   是     |	限价买入量	  |
-| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
+| symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 |price | number|是|限价买入价格
 
 4. Get/mobile/currency/trade/sell限价交易卖出
@@ -100,7 +100,7 @@ txNo:订单号
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 |num|  number   |   是     |	限价买入量	  |
-| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
+| symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 |price| number|是|价格
 
 5. Get/currency/trade/findHistoryEntrust获取个人历史委托
@@ -136,7 +136,7 @@ result:成功
 
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
-| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
+| symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
 6. Get/currency/trade/findEntrust获取个人当前委托
 
@@ -171,7 +171,7 @@ result:成功
 
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
-| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
+| symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
 7. Get/public/stock/currency/trade/latest交易记录
 
@@ -197,7 +197,7 @@ tradeTime:成交时间
 
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
-| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
+| symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
 ###资产API
 1. Get/currency/withdraws/save提币
@@ -226,7 +226,7 @@ result:返回是否成功
 | 	captcha|  number|  是  | 	验证码|
 | pwd|  string|  是  |	资金密码	|
 |toEwalletAddress|  string|  是  | 提币地址	|
-| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
+| symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
 2. Get/currency/deposits/find充值记录
 
@@ -259,7 +259,7 @@ txNo:订单号
 
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
-| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
+| symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 | type  |           |   是        |  type=0       |
 
 3. Get/currency/withdraws/find提币记录
@@ -293,7 +293,7 @@ result:返回是否成功
 
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
-| symbol|  String |  是  | btc_usd ltc_usd eth_usd etc_usd bch_usd|
+| symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 | type    |  number    | 是     | type=0      |
 
 4. Get/member/getAccount资产中心
