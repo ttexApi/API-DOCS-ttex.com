@@ -1,8 +1,8 @@
-﻿__author__ = 'Ziyang'
+﻿__author__ = 'Austere'
 
 import json, hashlib,struct,time,sys
 import urllib.request
-
+Host = 'http://127.0.0.1:8081/'
 class tt_api:
 	
     def __init__(self, mykey, mysecret):
@@ -48,8 +48,8 @@ class tt_api:
             self.jm = sign
             reqTime = (int)(time.time()*1000)
             params += '&sign=%s&reqTime=%d'%(sign, reqTime)
-            url = 'https:/api.ttex.com/' + path + '?' + params
-            #url = 'http://127.0.0.1:8081/' + path + '?' + params
+            #url = 'https:/api.ttex.com/' + path + '?' + params
+            url = Host + path + '?' + params
             req = urllib.request.Request(url)
             res = urllib.request.urlopen(req, timeout=10)
             doc = json.loads(res.read().decode("utf-8").replace('\0', ''))
@@ -76,7 +76,16 @@ class tt_api:
             obj = self.__api_call(path,params);
             return obj
         except Exception as ex:
-            print(sys.stderr, 'tt query_account exception,', ex)
+            print(sys.stderr, 'tt buy_price exception,', ex)
+            return None
+    def sell_price(self,symbol,num,price):
+        try:
+            params = "accessKey="+self.mykey+"&num="+str(num)+"&price="+str(price)+"&symbol="+symbol;
+            path = "currency/trade/sell"
+            obj = self.__api_call(path,params);
+            return obj
+        except Exception as ex:
+            print(sys.stderr, 'tt buy_price exception,', ex)
             return None
 
         
@@ -86,4 +95,4 @@ if __name__ == '__main__':
 
     api = tt_api(access_key, access_secret)
     #print(api.query_account())
-    print(api.buy_price("btc_tt",1.23,43000))
+    print(api.buy_price("eth_usdt",1.23,443.0))
