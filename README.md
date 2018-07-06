@@ -112,7 +112,7 @@ URL ```  https://api.ttex.com/currency/trade/findHistoryEntrust ```
 GET https://api.ttex.com/currency/trade/findHistoryEntrust
 # Response
 {
-	"data:[{
+	"data":[{
 	"createTimeString":2018-06-21 15:23:44
 	"entrustNumber":12407980.8629
 	"entrustPrice":0.08059329
@@ -147,7 +147,7 @@ URL ```https://api.ttex.com/currency/trade/findEntrust ```
 GET https://api.ttex.com/currency/trade/findEntrust
 # Response
 {
-	"data:[{
+	"data":[{
 	"createTimeString":2018-06-21 15:23:44
 	"entrustNumber":12407980.8629
 	"entrustPrice":0.08059329
