@@ -320,13 +320,13 @@ tradeMark:tradeMark=0,为买入状态;tradeMark=1,为卖出状态。
 turnoverQuantity:成交数量
 tradeStatus:状态
 状态说明
-         public final static Byte TRADE_STATUS_ORDER = 0;// 正在委托下单
-	 public final static Byte TRADE_STATUS_ENTRUST = 1;// 委托成功
-	 public final static Byte TRADE_STATUS_PART_TRADE = 2;// 部分成交
-	 public final static Byte TRADE_STATUS_TRADE = 3;// 已成交
-	 public final static Byte TRADE_STATUS_CANCEL = 4; // 场内撤单
-	 public final static Byte TRADE_STATUS_CANCEL_OUTER = 5; // 场外撤单
-	 public final static Byte TRADE_STATUS_FAILURE = 6;// 下单失败
+         当 tradeStatus=0;// 正在委托下单
+	 当 tradeStatus=1;// 委托成功
+	 当 tradeStatus=2;// 部分成交
+	 当 tradeStatus=3;// 已成交
+	 当 tradeStatus=4; // 场内撤单
+	 当 tradeStatus=5; // 场外撤单
+	 当 tradeStatus=6;// 下单失败
 		 
 ```
 请求参数
