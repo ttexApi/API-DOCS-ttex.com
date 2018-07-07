@@ -173,33 +173,7 @@ result:成功
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
-7. Get/public/stock/currency/trade/latest交易记录
-
-URL ```https://api.ttex.com/public/stock/currency/trade/latest```
-示例
-```
-# Request
-GET   https://api.ttex.com/public/stock/currency/trade/latest
-# Response
-[{
-    "num":303.6577
-    "tradePrice":0.00000739
-    "tradeTime":1529568810638
-}]
-```
-返回值说明
-```
-num:成交数量
-tradePrice:成交价格
-tradeTime:成交时间
-```
-请求参数
-
-|参数名    |     参数类型 |   必填  |  描述 |
-| :-------- | --------:| :------: |:------:|
-| symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
-
-8. Get/v1/market/tickers获取行情
+7. Get/v1/market/tickers获取行情
 
 URL ```https://api.ttex.com/v1/market/tickers```
 示例
@@ -231,7 +205,7 @@ ticker:获取行情返回成功的一个对象
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
-9. Get/v1/market/depth获取深度
+8. Get/v1/market/depth获取深度
 
 URL ```https://api.ttex.com/v1/market/depth```
 示例
@@ -268,7 +242,7 @@ bids:数据请求成功得到的数组
 | symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 | size|  Number |  是  | 深度|
 
-10. Get/currency/trade/cancel撤单
+9. Get/currency/trade/cancel撤单
 
 URL ```https://api.ttex.com/currency/trade/cancel```
 示例
@@ -290,7 +264,7 @@ result:撤单是否成功
 | :-------- | --------:| :------: |:------:|
 | txNo|  String|  是  | 订单号|
 
-11. Get/currency/trade/findOrder用户订单信息
+10. Get/currency/trade/findOrder用户订单信息
 
 URL ```https://api.ttex.com/currency/trade/findOrder```
 示例
