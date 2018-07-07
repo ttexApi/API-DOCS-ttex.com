@@ -207,23 +207,88 @@ URL ```https://api.ttex.com/v1/market/tickers```
 # Request
 GET   https://api.ttex.com/v1/market/tickers
 # Response
-[{
-    "date":1530884
-    "tradePrice":0.00000739
-    "tradeTime":1529568810638
-}]
+{
+    "date":1530884195825
+    "ticker":{
+              "high":"6999.0000000000"
+              "vol":"30.2457600980669260025024414062500"
+              "last":"6680.0000000000"
+              "low":"6432.0100000000"
+              "buy":"6621.0000000000"
+              "sell":"6899.9700000000"
+              "changeRate":null
+    }
+}
 ```
 返回值说明
 ```
-num:成交数量
-tradePrice:成交价格
-tradeTime:成交时间
+ticker:获取行情返回成功的一个对象
+
 ```
 请求参数
 
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
+
+9. Get/v1/market/depth获取深度
+
+URL ```https://api.ttex.com/v1/market/depth```
+示例
+```
+# Request
+GET   https://api.ttex.com/v1/market/depth
+# Response
+{
+   "ask":[
+         [6899.9700000000,0.0520]
+         [6899.9800000000,0.0775]
+         [6999.9900000000,0.0401]
+         [7000.0000000000,0.1222]
+         [7100.0000000000,0.2335]
+   ]
+   "bids":[
+         [6680.0000000000,0.0200]
+         [6621.0000000000,2.8899]
+         [6580.0000000000,0.0697]
+         [6575.0000000000,0.1500]
+         [6535.5000000000,0.3075]
+   ]
+}
+```
+返回值说明
+```
+ask:数据请求成功得到的数组
+bids:数据请求成功得到的数组
+```
+请求参数
+
+|参数名    |     参数类型 |   必填  |  描述 |
+| :-------- | --------:| :------: |:------:|
+| symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
+| size|  Number |  是  | 深度|
+
+10. Get/currency/trade/cancel撤单
+
+URL ```https://api.ttex.com/currency/trade/cancel```
+示例
+```
+# Request
+GET   https://api.ttex.com/currency/trade/cancel
+# Response
+{
+     "result":success
+}
+```
+返回值说明
+```
+result:撤单是否成功
+```
+请求参数
+
+|参数名    |     参数类型 |   必填  |  描述 |
+| :-------- | --------:| :------: |:------:|
+| txNo|  String|  是  | 订单号|
 
 ###资产API
 1. Get/member/getAccount资产中心
