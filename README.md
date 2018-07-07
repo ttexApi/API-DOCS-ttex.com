@@ -290,6 +290,7 @@ result:撤单是否成功
 | :-------- | --------:| :------: |:------:|
 | txNo|  String|  是  | 订单号|
 
+
 ###资产API
 1. Get/member/getAccount资产中心
 
