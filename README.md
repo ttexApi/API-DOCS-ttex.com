@@ -306,17 +306,28 @@ GET   https://api.ttex.com/currency/trade/findOrder
      "entrustPrice":0.110185
      "tradeMark":0
      "tradeStatus":1
+     "turnoverQuantity"1
      }
 }
 ```
 返回值说明
 ```
 result:请求是否成功
-createTimeString:时间
-entrustNumber:数量
-entrustPrice:价格
-tradeMark:类型
+createTimeString:委托时间
+entrustNumber:委托数量
+entrustPrice:委托价格
+tradeMark:tradeMark=0,为买入状态;tradeMark=1,为卖出状态。
+turnoverQuantity:成交数量
 tradeStatus:状态
+状态说明
+         public final static Byte TRADE_STATUS_ORDER = 0;// 正在委托下单
+	 public final static Byte TRADE_STATUS_ENTRUST = 1;// 委托成功
+	 public final static Byte TRADE_STATUS_PART_TRADE = 2;// 部分成交
+	 public final static Byte TRADE_STATUS_TRADE = 3;// 已成交
+	 public final static Byte TRADE_STATUS_CANCEL = 4; // 场内撤单
+	 public final static Byte TRADE_STATUS_CANCEL_OUTER = 5; // 场外撤单
+	 public final static Byte TRADE_STATUS_FAILURE = 6;// 下单失败
+		 
 ```
 请求参数
 
