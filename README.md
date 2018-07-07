@@ -199,104 +199,34 @@ tradeTime:成交时间
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
+8. Get/v1/market/tickers获取行情
+
+URL ```https://api.ttex.com/v1/market/tickers```
+示例
+```
+# Request
+GET   https://api.ttex.com/v1/market/tickers
+# Response
+[{
+    "date":1530884
+    "tradePrice":0.00000739
+    "tradeTime":1529568810638
+}]
+```
+返回值说明
+```
+num:成交数量
+tradePrice:成交价格
+tradeTime:成交时间
+```
+请求参数
+
+|参数名    |     参数类型 |   必填  |  描述 |
+| :-------- | --------:| :------: |:------:|
+| symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
+
 ###资产API
-1. Get/currency/withdraws/save提币
-
-URL ```   https://www.api.com/currency/withdraws/save```
-示例
-```
-# Request
-GET  https://api.ttex.com/currency/withdraws/save
-# Response
-{    
-     "data":提交成功
-     "result":success
-}
-```
-返回值说明
-```
-data:提交成功
-result:返回是否成功
-```
-请求参数
-
-|参数名    |     参数类型 |   必填  |  描述 |
-| :-------- | --------:| :------: |:------:|
-| amount|  number|  是  | 提币数量	|
-| 	captcha|  number|  是  | 	验证码|
-| pwd|  string|  是  |	资金密码	|
-|toEwalletAddress|  string|  是  | 提币地址	|
-| symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
-
-2. Get/currency/deposits/find充值记录
-
-URL ```  https://api.ttex.com/currency/deposits/find```
-示例
-```
-# Request
-GET https://api.ttex.com/currency/deposits/find
-# Response
-{
-     "data":[{
-     "amount":10000
-     "confirmTimeThreshold":1
-     "confirmTimes":1
-     "createTimeString":2018-06-02 17:35:45
-     "flow":1
-     "txNo":20180602583955
-     }],
-     "result":success
-}
-```
-返回值说明
-```
-data:返回成功时的数组对象
-amount:数量
-createTimeString:充币时间
-txNo:订单号
-```
-请求参数
-
-|参数名    |     参数类型 |   必填  |  描述 |
-| :-------- | --------:| :------: |:------:|
-| symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
-| type  |           |   是        |  type=0       |
-
-3. Get/currency/withdraws/find提币记录
-
-URL ``` https://api.ttex.com/currency/withdraws/find```
-示例
-```
-# Request
-GET  https://api.ttex.com/currency/withdraws/find
-# Response
-{  
-     "data":[{
-     "amount":5
-     "createTimeString":2018-06-11 15:11:40
-     "flow":1
-     "toEwalletAddress":212
-     }]
-     "result":success
-}
-```
-返回值说明
-```
-data:请求成功返回的数组对象
-amount:数量
-createTimeString:时间
-flow:状态
-toEwalletAddress:地址
-result:返回是否成功
-```
-请求参数
-
-|参数名    |     参数类型 |   必填  |  描述 |
-| :-------- | --------:| :------: |:------:|
-| symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
-| type    |  number    | 是     | type=0      |
-
-4. Get/member/getAccount资产中心
+1. Get/member/getAccount资产中心
 
 URL ```https://api.ttex.com/member/getAccount```
 示例
