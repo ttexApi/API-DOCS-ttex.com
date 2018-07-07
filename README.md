@@ -210,12 +210,12 @@ GET   https://api.ttex.com/v1/market/tickers
 {
     "date":1530884195825
     "ticker":{
-              "high":6999.0000000000
-              "vol":30.2457600980669260025024414062500
-              "last":6680.0000000000
-              "low":6432.0100000000
-              "buy":6621.0000000000
-              "sell":6899.9700000000
+              "high":"6999.0000000000"
+              "vol":"30.2457600980669260025024414062500"
+              "last":"6680.0000000000"
+              "low":"6432.0100000000"
+              "buy":"6621.0000000000"
+              "sell":"6899.9700000000"
               "changeRate":null
     }
 }
@@ -290,8 +290,41 @@ result:撤单是否成功
 | :-------- | --------:| :------: |:------:|
 | txNo|  String|  是  | 订单号|
 
+11. Get/currency/trade/findOrder用户订单信息
 
-### 资产API
+URL ```https://api.ttex.com/currency/trade/findOrder```
+示例
+```
+# Request
+GET   https://api.ttex.com/currency/trade/findOrder
+# Response
+{
+     "result":success
+     "data":{
+     "createTimeString":2018-07-06 22:33:17
+     "entrustNumber":0.0046
+     "entrustPrice":0.110185
+     "tradeMark":0
+     "tradeStatus":1
+     }
+}
+```
+返回值说明
+```
+result:撤单是否成功
+createTimeString:时间
+entrustNumber:数量
+entrustPrice:价格
+tradeMark:类型
+tradeStatus:状态
+```
+请求参数
+
+|参数名    |     参数类型 |   必填  |  描述 |
+| :-------- | --------:| :------: |:------:|
+| txNo|  String|  是  | 订单号|
+
+###资产API
 1. Get/member/getAccount资产中心
 
 URL ```https://api.ttex.com/member/getAccount```
