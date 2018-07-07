@@ -311,7 +311,7 @@ GET   https://api.ttex.com/currency/trade/findOrder
 ```
 返回值说明
 ```
-result:撤单是否成功
+result:请求是否成功
 createTimeString:时间
 entrustNumber:数量
 entrustPrice:价格
