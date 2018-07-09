@@ -1,7 +1,7 @@
 ## API参考
 ### 交易API
 
-1. Get/mobile/currency/trade/market/buy市价交易买入
+1. Get/currency/trade/market/buy市价交易买入
 
 URL ```  https://api.ttex.com/currency/trade/market/buy```
 示例
@@ -26,7 +26,7 @@ txNo:订单号
 |amount|  number   |   是     |	买入量	  |
 | symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
-2. Get/mobile/currency/trade/market/sell市价交易卖出
+2. Get/currency/trade/market/sell市价交易卖出
 
 URL ```   https://api.ttex.com/currency/trade/market/sell```
 示例
@@ -51,7 +51,7 @@ txNo:订单号
 |num|  number   |   是     |	卖出量	  |
 | symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
-3. Get/mobile/currency/trade/buy限价交易买入
+3. Get/currency/trade/buy限价交易买入
 
 URL ```https://api.ttex.com/currency/trade/buy```
 示例
@@ -77,7 +77,7 @@ txNo:订单号
 | symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 |price | number|是|限价买入价格
 
-4. Get/mobile/currency/trade/sell限价交易卖出
+4. Get/currency/trade/sell限价交易卖出
 
 URL ```    https://api.ttex.com/currency/trade/sell```
 示例
