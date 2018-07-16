@@ -32,7 +32,7 @@ URL ```   https://api.ttex.com/currency/trade/market/sell```
 示例
 ```
 # Request
-GET    https:api.ttex.com/currency/trade/market/sell
+GET    https://api.ttex.com/currency/trade/market/sell
 # Response
 [{
         "txNo":153006298350861212
