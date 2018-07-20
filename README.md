@@ -9,10 +9,10 @@ URL ```  https://api.ttex.com/currency/trade/market/buy```
 # Request
 GET   https://api.ttex.com/currency/trade/market/buy
 # Response
-[{
+{
         "txNo":15300629835086
         "result":3000
-}]
+}
 ```
 返回值说明
 ```
@@ -34,10 +34,10 @@ URL ```   https://api.ttex.com/currency/trade/market/sell```
 # Request
 GET    https://api.ttex.com/currency/trade/market/sell
 # Response
-[{
+{
         "txNo":153006298350861212
         "result":3000
-}]
+}
 ```
 返回值说明
 ```
@@ -59,10 +59,10 @@ URL ```https://api.ttex.com/currency/trade/buy```
 # Request
 GET     https://api.ttex.com/currency/trade/buy
 # Response
-[{
+{
         "txNo":1530063601833776402
         "result":3000
-}]
+}
 ```
 返回值说明
 ```
@@ -85,10 +85,10 @@ URL ```    https://api.ttex.com/currency/trade/sell```
 # Request
 GET     https://api.ttex.com/currency/trade/sell
 # Response
-[{
+{
         "txNo":1512263601833776402
         "result":3000
-}]
+}
 ```
 返回值说明
 ```
