@@ -214,7 +214,7 @@ URL ```https://api.ttex.com/v1/market/depth```
 GET   https://api.ttex.com/v1/market/depth
 # Response
 {
-   "ask":[
+   "asks":[
          [6899.9700000000,0.0520]
          [6899.9800000000,0.0775]
          [6999.9900000000,0.0401]
@@ -232,7 +232,7 @@ GET   https://api.ttex.com/v1/market/depth
 ```
 返回值说明
 ```
-ask:数据请求成功得到的数组
+asks:数据请求成功得到的数组
 bids:数据请求成功得到的数组
 ```
 请求参数
