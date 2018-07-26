@@ -55,7 +55,7 @@ class tt_api:
             doc = json.loads(res.read().decode("utf-8").replace('\0', ''))
             return doc
         except Exception as ex:
-            print(sys.stderr, 'zb request ex: ', ex)
+            print(sys.stderr, 'tt request ex: ', ex)
             return None
 
     def query_account(self):
@@ -90,9 +90,9 @@ class tt_api:
 
         
 if __name__ == '__main__':
-    access_key    = 'b7abb796-d492-4f07-b5ca-e2708ed3bbb8'
-    access_secret = 'E0F1D03D43E623A815EAC1FB928AE53B2F49C7DAC1AB6462'
+    access_key    = 'accessKey'
+    access_secret = 'secreteKey'
 
     api = tt_api(access_key, access_secret)
-    #print(api.query_account())
-    print(api.buy_price("eth_usdt",1.23,443.0))
+    print(api.query_account())
+    #print(api.buy_price("eth_usdt",1.23,443.0))
