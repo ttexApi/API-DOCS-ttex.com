@@ -46,14 +46,12 @@ public class RestTest {
 		params.put("accessKey", ACCESS_KEY);// 这个需要加入签名,放前面
 		String digest = SECRET_KEY;
 		String sign = EncryDigestUtil.hmacSign(MapSort.toStringMap(params), digest); // 参数执行加密
-        digest= EncryDigestUtil.digest(SECRET_KEY);
 		String method = "getAccount";
-        String param = "accessKey=" + ACCESS_KEY;
+        	String param = "accessKey=" + ACCESS_KEY;
 		params.put("reqTime", System.currentTimeMillis() + "");
-        String reqTime = params.get("reqTime");
-        String url =  URL_PREFIX+ "member/" + method +"?"+ param+"&sign=" + sign + "&reqTime=" + reqTime;
-        String json = HttpUtilManager.getInstance().sendHttps(url, params,"utf-8");
-
+       		String reqTime = params.get("reqTime");
+        	String url =  URL_PREFIX+ "member/" + method +"?"+ param+"&sign=" + sign + "&reqTime=" + reqTime;
+       		String json = HttpUtilManager.getInstance().sendHttps(url, params,"utf-8");
 		return json;
 	}
 
