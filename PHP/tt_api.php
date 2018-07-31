@@ -11,8 +11,8 @@
 	var_dump($Fond_tt);
 	
 	class ttAPI {
-	var  $access_key="25608af3-d9a8-4854-b034-4134acb5dfca";
-	var  $secret_key="1058AB3D9240F4131A29EF5BBA86E94F8064795B43A2976B";
+	var  $access_key="access_key";
+	var  $secret_key="secret_key";
 	
 	function httpRequest($pUrl, $pData){
 		$tCh = curl_init();
