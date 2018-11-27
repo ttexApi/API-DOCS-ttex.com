@@ -171,7 +171,7 @@ result:是否成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
-| start|  number|    是 |分页参数(分页参数值分别为0，20，40)
+| start|  number|    否 |分页参数(分页参数值分别为0，20，40。默认为0)
 
 6. Get/v2/currency/trade/findHistoryEntrust查询历史订单
 
@@ -219,7 +219,7 @@ result:是否成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
-| start|  number|    是 |分页参数(分页参数值分别为0，20，40)
+| start|  number|    否 |分页参数(分页参数值分别为0，20，40。默认为0)|
 
 ### 行情API
 
