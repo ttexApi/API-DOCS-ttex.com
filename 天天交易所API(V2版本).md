@@ -1,6 +1,6 @@
 ## API参考
 
-###交易API
+### 交易API
 
 1. Get/v2/currency/trade/buy买入订单
 
@@ -221,7 +221,7 @@ result:是否成功
 | symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 | start|  number|    是 |分页参数(分页参数值分别为0，20，40)
 
-###行情API
+### 行情API
 
 1. Get/v2/market/kline获取k线图数据
 
@@ -401,7 +401,7 @@ ts:成交时间
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
-###账户API
+### 账户API
 
 1. Get/v2/member/getAccount用户订单信息
 
