@@ -1,5 +1,5 @@
 ## API参考
-### 交易API
+#### 交易API
 
 1. Get/v2/currency/trade/buy买入订单
 
@@ -171,7 +171,7 @@ result:是否成功
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
-###行情API
+####行情API
 1. Get/v2/market/kline获取k线图数据
 
 URL ```https://api.ttex.com/v2/market/kline ```
@@ -350,7 +350,7 @@ ts:成交时间
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
-###账户API
+####账户API
 1. Get/v2/member/getAccount用户订单信息
 
 URL ```https://api.ttex.com/v2/member/getAccount```
