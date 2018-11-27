@@ -103,15 +103,17 @@ data:请求返回成功取到的对象
 result:是否成功
 txNo:订单号
 tradeStatus:订单状态{
-当 tradeStatus=0;// 正在委托下单
-当 tradeStatus=1;// 委托成功
-当 tradeStatus=2;// 部分成交
-当 tradeStatus=3;// 已成交
-当 tradeStatus=4; // 场内撤单
-当 tradeStatus=5; // 场外撤单
-当 tradeStatus=6;// 下单失败
+      当 tradeStatus=0;// 正在委托下单
+      当 tradeStatus=1;// 委托成功
+      当 tradeStatus=2;// 部分成交
+      当 tradeStatus=3;// 已成交
+      当 tradeStatus=4; // 场内撤单
+      当 tradeStatus=5; // 场外撤单
+      当 tradeStatus=6;// 下单失败
+}                   
+tradeMark:交易标识{
+      0代表买单，1代表卖单
 }
-tradeMark:交易标识
 entrustPrice:委托价格
 entrustNumber:委托数量
 createTimeString:创建时间
@@ -148,8 +150,18 @@ data:请求返回成功取到的数组对象
 createTimeString:时间
 entrustNumber:数量
 entrustPrice:价格
-tradeMark:类型
-tradeStatus:状态
+tradeMark:类型{
+      0代表买单，1代表卖单
+}
+tradeStatus:状态{
+      当 tradeStatus=0;// 正在委托下单
+      当 tradeStatus=1;// 委托成功
+      当 tradeStatus=2;// 部分成交
+      当 tradeStatus=3;// 已成交
+      当 tradeStatus=4; // 场内撤单
+      当 tradeStatus=5; // 场外撤单
+      当 tradeStatus=6;// 下单失败
+}    
 txNo:订单号
 result:是否成功
 ```
@@ -334,7 +346,7 @@ ts:成交时间
 ```
 请求参数
 
-|参数名    |     参数类型 |   必填    描述 |
+|参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
