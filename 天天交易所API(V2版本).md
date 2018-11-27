@@ -170,6 +170,7 @@ result:是否成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
+
 ###行情API
 1. Get/v2/market/kline获取k线图数据
 
@@ -348,6 +349,7 @@ ts:成交时间
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
+
 ###账户API
 1. Get/v2/member/getAccount用户订单信息
 
