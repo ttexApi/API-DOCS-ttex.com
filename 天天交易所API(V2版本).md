@@ -170,8 +170,58 @@ result:是否成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
+| start|  number|    是 |分页参数(分页参数值分别为0，20，40)
+
+6. Get/v2/currency/trade/findHistoryEntrust查询历史订单
+
+URL ```  https://api.ttex.com/v2/currency/trade/findHistoryEntrust```
+示例
+```
+# Request
+GET https://api.ttex.com/v2/currency/trade/findHistoryEntrust
+# Response
+{
+	"data":[{
+	"createTimeString":2018-06-21 15:23:44
+	"entrustNumber":12407980.8629
+	"entrustPrice":0.08059329
+	"tradeMark":0
+	"tradeStatus":5
+    "txNo":1587666654122884
+	}],
+	"result":success
+}
+```
+返回值说明
+```
+data:请求返回成功取到的数组对象
+createTimeString:时间
+entrustNumber:数量
+entrustPrice:价格
+tradeMark:类型{
+      0代表买单，1代表卖单
+}
+tradeStatus:状态{
+      当 tradeStatus=0;// 正在委托下单
+      当 tradeStatus=1;// 委托成功
+      当 tradeStatus=2;// 部分成交
+      当 tradeStatus=3;// 已成交
+      当 tradeStatus=4; // 场内撤单
+      当 tradeStatus=5; // 场外撤单
+      当 tradeStatus=6;// 下单失败
+}    
+txNo:订单号
+result:是否成功
+```
+请求参数
+
+|参数名    |     参数类型 |   必填  |  描述 |
+| :-------- | --------:| :------: |:------:|
+| symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
+| start|  number|    是 |分页参数(分页参数值分别为0，20，40)
 
 ###行情API
+
 1. Get/v2/market/kline获取k线图数据
 
 URL ```https://api.ttex.com/v2/market/kline ```
@@ -351,6 +401,7 @@ ts:成交时间
 | symbol|  String |  是  | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
 ###账户API
+
 1. Get/v2/member/getAccount用户订单信息
 
 URL ```https://api.ttex.com/v2/member/getAccount```
