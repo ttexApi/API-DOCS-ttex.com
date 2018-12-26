@@ -24,8 +24,8 @@ txNo:订单号
 
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
-|num|  number   |   是     |	下单数量	  |
-|price|  number   |   是     |		下单价格	  |
+|num|  number   |   是     |	下单数量 例如:295.9668	  |
+|price|  number   |   是     |		下单价格 例如:5.4528	  |
 | symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
 2. Get/v2/currency/trade/sell卖出订单
@@ -50,8 +50,8 @@ txNo:订单号
 
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
-|num|  number   |   是     |	下单数量	  |
-|price|  number   |   是     |		下单价格	  |
+|num|  number   |   是     |	下单数量 例如:169.9750	  |
+|price|  number   |   是     |		下单价格 例如2.110000	  |
 | symbol|  String |  是   | btc_usdt ltc_usdt eth_usdt etc_usdt bch_usdt|
 
 3. Get/v2/currency/trade/cancel撤单
@@ -75,7 +75,7 @@ result:是否成功
 
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
-|txNo|  number   |   是     |	订单编号	  |
+|txNo|  number   |   是     |	订单编号 例如:154581730847678346143	  |
 
 
 4. Get/v2/currency/trade/findOrder查询单个订单信息
@@ -123,7 +123,7 @@ createTimeString:创建时间
 
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
-|txNo|  number   |   是     |	订单编号	  |
+|txNo|  number   |   是     |	订单编号 例如:154581730847678346143	  |
 
 5. Get/v2/currency/trade/findEntrust查询未完成订单
 
@@ -253,9 +253,9 @@ volume:成交量
 
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
-| end|  number |  是   |终止时间|
-| period|  number |  是   |	时间段|
-| start|  number |  是   |起始时间|
+| end|  number |  是   |终止时间 例如:1545819011|
+| period|  number |  是   |	时间段 例如:1D|
+| start|  number |  是   |起始时间 例如:1545732551|
 | symbol|  string	 |  是   |币种编号|
 
 2. Get/v2/market/alltickers获取全部交易对的信息
