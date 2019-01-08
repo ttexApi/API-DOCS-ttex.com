@@ -254,7 +254,7 @@ volume:成交量
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | end|  number |  是   |终止时间 例如:1545819011|
-| period|  number |  是   |	时间段 例如:1|
+| period|  number |  是   |	时间段 例如:(1分钟时period为1,5分钟时period为5,15分钟时period为15,30分钟时period为30,1小时时period为60,1天时period为1D,1个月时period为1W)|
 | start|  number |  是   |起始时间 例如:1545732551|
 | symbol|  string	 |  是   |币种编号|
 
