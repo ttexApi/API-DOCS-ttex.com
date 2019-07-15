@@ -263,6 +263,7 @@ result:撤单是否成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | txNo|  String|  是  | 订单号|
+| symbol  |    String     |  是  |   交易对名称   |
 
 10. Get/currency/trade/findOrder用户订单信息
 
@@ -308,6 +309,7 @@ tradeStatus:状态
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 | txNo|  String|  是  | 订单号|
+| symbol  |   String    |  是  |   交易对名称   |
 
 ###资产API
 1. Get/member/getAccount资产中心
