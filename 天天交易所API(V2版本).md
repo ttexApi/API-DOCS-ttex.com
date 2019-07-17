@@ -76,7 +76,7 @@ result:是否成功
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 |txNo|  number   |   是     |	订单编号 例如:154581730847678346143	  |
-
+| symbol  |    String     |  是  |   交易对名称   |
 
 4. Get/v2/currency/trade/findOrder查询单个订单信息
 
@@ -124,6 +124,7 @@ createTimeString:创建时间
 |参数名    |     参数类型 |   必填  |  描述 |
 | :-------- | --------:| :------: |:------:|
 |txNo|  number   |   是     |	订单编号 例如:154581730847678346143	  |
+| symbol  |    String     |  是  |   交易对名称   |
 
 5. Get/v2/currency/trade/findEntrust查询未完成订单
 
